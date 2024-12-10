@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .joke-text {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        .btn {
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="..//index.html">Jyles Woodward</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="..//index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="automotive.html">Automotive</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="webapp.html">Web App</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <img src="..//Assets/jokegeneratorimage.jpg" alt="Joke Generator Banner">
+        <div class="overlay">
+            <p class="joke-text" id="joke">Click below to get a joke!</p>
+            <button class="btn btn-primary" id="newJokeBtn">Generate Joke</button>
+        </div>
+    </main>
+    <footer class="text-center mt-4">
+        <p>© Jyles Woodward | <a href="..//index.html">https://woodward37.github.io/JylesProject/</a></p>
+    </footer>
+    <script>
+        const jokeText = document.getElementById('joke');
+        const jokeButton = document.getElementById('newJokeBtn');
+
+        const jokes = [
+            "Why did the Information Systems student bring a ladder to class? To reach the cloud!",
+            "Why don't BYU students ever feel lost? They always have a MapQuest of the Spirit!",
+            "Why was the database so happy at BYU? Because it found a 'relation-shun' in SQL class!",
+            "Why did the Information Systems professor love BYU? Because every query is inspired!",
+            "What’s an Information Systems student's favorite hymn? 'I Need Thee Every Hour' (especially before finals).",
+            "Why did the programmer choose BYU? They heard it had excellent 'data integrity'!",
+            "What’s an Information Systems major’s favorite dessert? Cache and cookies!",
+            "Why did the BYU student become a software engineer? To debug life’s challenges with faith and code!"
+        ];
+
+        jokeButton.addEventListener('click', () => {
+            const randomIndex = Math.floor(Math.random() * jokes.length);
+            jokeText.textContent = jokes[randomIndex];
+        });
+    </script>
+</body>
+</html>

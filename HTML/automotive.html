@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #6699cc;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #004080;
+        }
+        .corvette-img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .facts-list {
+            margin-bottom: 20px;
+        }
+        .facts-list ol {
+            margin: 0 0 0 20px;
+        }
+        .facts-list ul {
+            margin: 5px 0 0 20px;
+        }
+        .anchor-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="..//index.html">Jyles Woodward</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="..//index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="automotive.html">Automotive</a></li>
+                    <li class="nav-item"><a class="nav-link" href="webapp.html">Web App</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <h1>Automotive Enthusiast - Corvette ZR1</h1>
+        <img src="..//Assets/zr1image.jpg" 
+             alt="Corvette ZR1" class="corvette-img">
+        <h2>Top Facts About the Corvette ZR1</h2>
+        <div class="facts-list">
+            <ol>
+                <li>The ZR1 is a high-performance variant of the C6 Corvette, featuring:
+                    <ul>
+                        <li>A 6.2L supercharged V8 engine producing 638 hp</li>
+                        <li>Carbon ceramic brakes for superior stopping power</li>
+                        <li>A top speed of 205 mph</li>
+                    </ul>
+                </li>
+                <li>The ZR1 has an advanced active handling system to keep the car stable at high speeds.</li>
+                <li>It features lightweight carbon fiber body panels to improve performance and efficiency.</li>
+            </ol>
+        </div>
+        <div id="video">
+            <h2>The Supercar Killer</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZuqKfVmcX3g?si=goO6zHcvNUFSqNQw&amp;start=24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div id="tableau">
+            <h2>Corvette Ownership Statistics</h2>
+            <div class="tableau-container">
+                <div class='tableauPlaceholder' id='viz1733814944576' style='position: relative'>
+                    <noscript>
+                        <a href='#'>
+                            <img alt='8 Generations of Performance 1953-2023 ' 
+                                 src='https://public.tableau.com/static/images/Co/Corvette-8Generations/8GenerationsofCorvette1953-2023/1_rss.png' 
+                                 style='border: none' />
+                        </a>
+                    </noscript>
+                    <object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='Corvette-8Generations/8GenerationsofCorvette1953-2023' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https://public.tableau.com/static/images/Co/Corvette-8Generations/8GenerationsofCorvette1953-2023/1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                    </object>
+                </div>
+                <script type='text/javascript'>
+                    var divElement = document.getElementById('viz1733814944576');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    if (divElement.offsetWidth > 800) {
+                        vizElement.style.width = '1250px';
+                        vizElement.style.height = '1427px';
+                    } else if (divElement.offsetWidth > 500) {
+                        vizElement.style.width = '1250px';
+                        vizElement.style.height = '1427px';
+                    } else {
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = '1927px';
+                    }
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
+            </div>
+        </div>
+        <a href="#video" class="anchor-link">Jump to Video</a>
+    </main>
+    <footer class="text-center mt-4">
+        <p>© Jyles Woodward | <a href="..//index.html">https://woodward37.github.io/JylesProject/</a></p>
+    </footer>
+</body>
+</html>
